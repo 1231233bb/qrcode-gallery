@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>二维码大图</title>
+    <style>
+        /* 让图片自动居中、适配手机/电脑屏幕 */
+        body {
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+            min-height: 100vh;       /* 占满屏幕高度 */
+            background-color: #fff;  /* 背景白，避免黑边 */
+        }
+        img {
+            max-width: 100%;    /* 图片最大占满屏幕 */
+            max-height: 100vh;  /* 避免超出屏幕 */
+            object-fit: contain;/* 保持比例，不变形 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 替换成你的图片名！如果图片是png，就改后缀为.png -->
+    <img src="qrcode.jpg" alt="二维码大图">
+</body>
+</html>
